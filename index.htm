@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Check responsive</title>
+		<style type="text/css">
+			.container{
+				width:80%; 
+				margin: 0 auto;
+			}
+			.header{
+				height: 28px;
+            	background-color: #679BB7;
+			}
+			.orderId{
+				float:left;
+				margin-top: 5px;
+			}
+			.orderDate{
+				float:right;
+				margin-top: 5px;
+			}
+			.wrapper{
+				margin: 10px;
+				min-height: 150px;
+			}
+			.lefterWrapper{
+				background-color: black;
+				float: left;
+				width: 15%;
+				min-height: 150px;
+
+			}
+			.centerWrapper{
+				background-color: #bbd2df;
+				float: left;
+				width:59%;
+				min-height: 150px;
+
+
+			}
+			.rightWrapper{
+				background-color: blue;
+				float: right;
+				width: 25%;
+				min-height: 150px;
+
+			}
+			.userTimeline{
+				background-color: green;
+				height: 100px;
+			}
+			.otherContent{
+				margin-top: 10px;
+			}
+			.userAddress{
+				background-color: antiquewhite; 
+				float: left;
+				width: 50%;
+			}
+			.userSubtotal{
+				background-color: whitesmoke;
+				float: right;
+				width: 50%;
+			}
+
+			@media screen and (min-width: 320px) and (max-width: 980px) {
+			.header{
+				height: 50px;
+            	background-color: #679BB7;
+			}
+			.orderId{
+				float: none;
+				margin-top: 5px;
+			}
+			.orderDate{
+				float: none;
+				margin-top: 5px;
+			}
+			.wrapper{
+				margin: 10px;
+				min-height: 150px;
+			}
+			.lefterWrapper{
+				background-color: black;
+				float: none;
+				width: 100%;
+				min-height: 150px;
+
+			
+
+			}
+			.centerWrapper{
+				background-color: #bbd2df;
+				float: none;
+				width:100%;
+				min-height: 150px;
+
+
+			}
+			.rightWrapper{
+				background-color: blue;
+				float: none;
+				width: 100%;
+				min-height: 150px;
+
+			}
+			.imageClass{
+					display: block; margin-left: auto; margin-right: auto;
+			}
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="orderId" id="orderId">Order#</div>
+				<div class="orderDate" id="orderDate">Order date:</div>
+			</div>
+
+			<div class="wrapper">
+				<div class="lefterWrapper" id="productImage">
+					<img class=".imageClass" src="" alt="product image" height="140px" width="140px">
+				</div>
+				<div class="centerWrapper" id="productDetails">
+					<div>navneet</div>
+				</div>
+				<div class="rightWrapper" id="otherThings">
+					<div>Other things</div>
+				</div>
+			</div>
+
+			<div class="userTimeline" id="timeline">Put timeline here</div>
+
+			<div class="otherContent">
+				<div class="userAddress" id="address">Put address related data here</div>
+				<div class="userSubtotal" id="subtotal">Put subtotal here</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>
